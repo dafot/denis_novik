@@ -65,9 +65,20 @@ html {
 }
 .hero__container {    
 }
+.about-me__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 /*containers*/
 /* header */
-.header {}
+.header {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+}
 
 .header__menu {
     padding: 3.2rem 0 3.2rem 0;
@@ -99,6 +110,9 @@ html {
 /*HERO*/
 
 .hero {
+    min-height: 100vh;
+    padding-top: 13rem;
+    padding-bottom: 10.4rem
 }
 .hero__top {
     display: flex;
@@ -145,4 +159,30 @@ html {
     cursor: pointer;
 }
 .hero__photo {
+}
+
+/*ABOUT-ME*/
+.about-me {
+    background-color: #F6F6F6;
+}
+.about-me__title {
+    margin-bottom: 1.8rem;
+}
+.section__title {
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-size: 3.4rem;
+    line-height: 100%;
+}
+.about-me__desrs-list {
+    max-width: 45rem;
+}
+.about-me__descrs-list__item {
+    margin-bottom: 5.4rem;
+    text-align: center;
+}
+.about-me__descr {
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-size: 1.8rem;
+    line-height: 100%;
+    color: #070707;
 }
