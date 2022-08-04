@@ -100,6 +100,12 @@ html {
 
 .hero {
 }
+.hero__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.9rem 0 3rem 0;
+}
 .hero__title {
     font-family: 'Gilroy-Bold', sans-serif;
     font-size: 4.7rem;
@@ -112,12 +118,31 @@ html {
     line-height: 100%;
 }
 .toolbar {
+    font-family: 'Gilroy-Bold', sans-serif;
+    color: #828282;
+    text-transform: capitalize;
+    
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
 }
+
 .hero__en {
 }
-.hero__lang-link {
+.hero__lang-line {
+    color: #000;
 }
 .hero__ru {
+}
+.hero__ru,
+.hero__en {
+    transition: color .2s;
+}
+.hero__ru:hover,
+.hero__en:hover {
+    color:#000;
+    cursor: pointer;
 }
 .hero__photo {
 }
