@@ -253,6 +253,7 @@ html {
 
 /*PORTFOLIO*/
 .portfolio {
+    background-color: #F6F6F6;
 }
 .portfolio__container {
     display: flex;
@@ -288,4 +289,59 @@ html {
 .portfolio__list-link:visited {
     color: #070707;
     text-decoration-line: underline;
+}
+
+/*CONTACTS*/
+.contacts {
+    padding-top: 11.4rem;
+    padding-bottom: 10.4rem;
+}
+.contacts__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contacts__container > *:not(:last-child) {
+    margin-bottom: 3rem;
+}
+.contacts__title {
+}
+.section__title {
+}
+.contacts__descr {
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-size: 1.8rem;
+    line-height: 100%;
+    text-align: center;
+}
+.contacts__btn {
+}
+.btn {
+    display: inline-block;
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-size: 1.8rem;
+    line-height: 100%;
+    padding: 1.3rem 2.9rem;
+    background-color: #000;
+    border-radius: 3em;
+}
+.btn,
+.btn:visited {
+    color: #fff;
+}
+.contacts__social-list {
+    width: 34.2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.contacts__social-list-item {
+}
+.contacts__social-list-link {
+}
+.contacts__link-me {
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-size: 1.4rem;
+    line-height: 100%;
+    text-align: center;
+    color: #828282;
 }
