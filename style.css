@@ -59,6 +59,7 @@ html {
 .container {
     max-width: 94rem;
     margin: 0 auto;
+    padding: 0 15px 0 15px;
 }
 /*containers*/
 .header__container {
@@ -159,10 +160,13 @@ html {
     cursor: pointer;
 }
 .hero__photo {
+    max-width: 100%;
 }
 
 /*ABOUT-ME*/
 .about-me {
+    padding-top: 13rem;
+    padding-bottom: 10.4rem;
     background-color: #F6F6F6;
 }
 .about-me__title {
@@ -185,4 +189,103 @@ html {
     font-size: 1.8rem;
     line-height: 100%;
     color: #070707;
+}
+@media(max-width: 800px) {
+    html {
+        font-size: 8px;
+    }
+}
+@media(max-width: 800px) {
+    html {
+        font-size: 6px;
+    }
+}
+
+
+
+/*SKILLS*/
+.skills {
+
+    padding-top: 9.1rem;
+    padding-bottom: 11rem;
+}
+.skills__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+.container {
+}
+.skills__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.section__title {
+}
+.skills__descr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-size: 1.8rem;
+    line-height: 100%;
+}
+.skills__list {
+    display: flex;
+    justify-content: space-between;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: -1;
+}
+.skills__list-item {
+
+}
+
+/*PORTFOLIO*/
+.portfolio {
+}
+.portfolio__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.portfolio__title {
+    margin-bottom: 4.7rem;
+}
+.section__title {
+}
+.portfolio__list {
+}
+.portfolio__list-item {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+
+    margin-bottom: 9.9rem;
+}
+.portfolio__list-item label {
+    margin-bottom: 4.4rem;
+}
+.portfolio__list-img {
+    max-width: 100%;
+}
+.portfolio__list-link {
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-size: 1.8rem;
+    line-height: 100%;
+}
+.portfolio__list-link,
+.portfolio__list-link:visited {
+    color: #070707;
+    text-decoration-line: underline;
 }
